@@ -52,7 +52,10 @@ public class Grafo {
 		for(int i=0; i<=vertices.size(); i++) {
 			for(int j=0; j<=vertices.size(); j++) {
 				if(matriz [i][j]==null) {
-						matriz[i][j] = "∞";					
+					if(isValoravel()) 
+						matriz[i][j] = "∞";
+					else
+						matriz[i][j] = "0";
 				}
 				if(i==0 && j==0) {
 					matriz[i][j] = " ";
@@ -120,7 +123,10 @@ public class Grafo {
 		for(int i=0; i<=vertices.size(); i++) {
 			for(int j=0; j<=arestas.size(); j++) {
 				if(matriz [i][j]==null) {
+					if(isValoravel())
 						matriz[i][j] = " ∞";
+					else
+						matriz[i][j] = " 0";
 				}
 				if(i==0 && j==0) {
 					matriz[i][j] = " ";
