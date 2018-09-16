@@ -52,12 +52,12 @@ public class Grafo {
 		for(int i=0; i<=vertices.size(); i++) {
 			for(int j=0; j<=vertices.size(); j++) {
 				if(matriz [i][j]==null) {
-						matriz[i][j] = "0";					
+						matriz[i][j] = "∞";					
 				}
 				if(i==0 && j==0) {
-					matriz[i][j] = "  ";
+					matriz[i][j] = " ";
 				}
-				texto += matriz [i] [j]+" ";
+				texto += " "+matriz [i] [j]+" ";
 			}
 			texto += "\n";
 		}
@@ -120,7 +120,7 @@ public class Grafo {
 		for(int i=0; i<=vertices.size(); i++) {
 			for(int j=0; j<=arestas.size(); j++) {
 				if(matriz [i][j]==null) {
-						matriz[i][j] = " 0";
+						matriz[i][j] = " ∞";
 				}
 				if(i==0 && j==0) {
 					matriz[i][j] = " ";
@@ -153,7 +153,7 @@ public class Grafo {
 	
 	public void coletaArestas(String txtArestas){
 		String texto="", nome="";
-		String valor="";
+		int valor=0;
 		txtArestas += " ";
 		for(int c=0; c<txtArestas.length(); c++) {
 			if(txtArestas.charAt(c) == ' ') {
@@ -185,9 +185,7 @@ public class Grafo {
 								}
 							}
 							if(isValoravel() && operador==2 && !nome.equals("")) {
-									valor = nome;
-									if(valor.equals("0"))
-										valor = "∞" ; 												
+									valor = Integer.parseInt(nome);											
 									operador = 0;
 									nome = "";
 							}

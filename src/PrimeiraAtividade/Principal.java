@@ -7,7 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Grafo grafo = new Grafo();
-		String txtDirecionado = JOptionPane.showInputDialog("O grafo é direcionável?(S/N)");
+		String txtDirecionado = JOptionPane.showInputDialog("O grafo é orientado?(S/N)");
 		grafo.setDirecionado(txtDirecionado);
 		String txtValoravel = JOptionPane.showInputDialog("O grafo é valorável?(S/N)");
 		grafo.setValoravel(txtValoravel);
