@@ -11,7 +11,7 @@ Algoritmo para criação dos grafos e inserções de arestas e vértices.
 Visualização do grafo através de **listas de arestas**, **listas de adjacência**, **matriz de adjacência** e **matriz de incidência**
 
 ### Segunda atividade
-Foi implementado o algoritmo de Dijkstra. Através de um vértice inicial, ele analisa o menor caminhho para os demais vértices no grafo.
+Foi implementado o algoritmo de Dijkstra. Através de um vértice inicial ele analisa o menor caminhho para os demais vértices no grafo.
 
 ### Terceira atividade
 Foi implementado o algoritmo de Prim-Jarnik e Kruskal. Ambos criam uma Árvore Geradora Mínima (Arestas = Vértices - 1) através de um grafo.
